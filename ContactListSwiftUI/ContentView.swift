@@ -31,11 +31,14 @@ struct ContactDetailView: View {
     let person: Person
     
     var body: some View {
+        
         NavigationStack {
             ZStack {
-                Image(systemName: "person.crop.circle")
+                
+                Image(systemName: "person.fill")
                     .resizable()
                     .frame(width: 120, height: 120)
+                
                 
                 VStack(alignment: .leading, spacing: 10) {
                     //Text("Full Name: \(person.fullName)")
@@ -46,6 +49,7 @@ struct ContactDetailView: View {
                 }
                 .navigationBarTitle("\(person.fullName)")
                 .padding()
+                
             }
         }
     }

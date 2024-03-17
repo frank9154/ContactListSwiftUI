@@ -14,11 +14,11 @@ struct ContactListSwiftUIApp: App {
             TabView {
                 ContentView()
                     .tabItem {
-                        Label("Contacts", systemImage: "person.crop.circle")
+                        Label("Contacts", systemImage: "person.2.fill")
                     }
                 Text("Numbers")
                     .tabItem {
-                        Label("Numbers", systemImage: "heart.fill")
+                        Label("Numbers", systemImage: "phone.fill")
                     }
             }
         }
