@@ -38,8 +38,8 @@ struct ContactDetailView: View {
             
             Spacer()
         }
-        .padding()
         .navigationBarTitle("\(person.fullName)")
+        .padding()
     }
 }
 
