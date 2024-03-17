@@ -31,15 +31,23 @@ struct ContactDetailView: View {
     let person: Person
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            //Text("Full Name: \(person.fullName)")
-            Text("Email: \(person.email)")
-            Text("Phone: \(person.phoneNumber)")
-            
-            Spacer()
+        NavigationStack {
+            ZStack {
+                Image(systemName: "person.crop.circle")
+                    .resizable()
+                    .frame(width: 120, height: 120)
+                
+                VStack(alignment: .leading, spacing: 10) {
+                    //Text("Full Name: \(person.fullName)")
+                    Text("Email: \(person.email)")
+                    Text("Phone: \(person.phoneNumber)")
+                    
+                    Spacer()
+                }
+                .navigationBarTitle("\(person.fullName)")
+                .padding()
+            }
         }
-        .navigationBarTitle("\(person.fullName)")
-        .padding()
     }
 }
 
