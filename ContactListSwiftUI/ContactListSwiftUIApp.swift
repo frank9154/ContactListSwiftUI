@@ -11,7 +11,16 @@ import SwiftUI
 struct ContactListSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("Contacts", systemImage: "person.crop.circle")
+                    }
+                Text("Favorites")
+                    .tabItem {
+                        Label("Favorites", systemImage: "star.fill")
+                    }
+            }
         }
     }
 }
