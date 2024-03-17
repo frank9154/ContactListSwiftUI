@@ -34,13 +34,11 @@ struct ContactDetailView: View {
         
         NavigationStack {
             ZStack {
-                
                 Image(systemName: "person.fill")
                     .resizable()
                     .frame(width: 120, height: 120)
                 
-                
-                VStack(alignment: .leading, spacing: 10) {
+                VStack {
                     //Text("Full Name: \(person.fullName)")
                     HStack {
                         Image(systemName: "phone")
@@ -50,14 +48,13 @@ struct ContactDetailView: View {
                         Image(systemName: "tray")
                         Text("\(person.email)")
                     }
-                   
                     
                     Spacer()
                 }
-                .navigationBarTitle("\(person.fullName)")
-                .padding()
                 
             }
+            .navigationTitle("\(person.fullName)")
+            .padding()
         }
     }
 }
