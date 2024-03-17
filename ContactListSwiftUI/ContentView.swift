@@ -32,12 +32,14 @@ struct ContactDetailView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("Full Name: \(person.fullName)")
+            //Text("Full Name: \(person.fullName)")
             Text("Email: \(person.email)")
             Text("Phone: \(person.phoneNumber)")
+            
+            Spacer()
         }
         .padding()
-        .navigationBarTitle("Contact Details")
+        .navigationBarTitle("\(person.fullName)")
     }
 }
 

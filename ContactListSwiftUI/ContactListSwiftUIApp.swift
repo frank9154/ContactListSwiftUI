@@ -18,7 +18,7 @@ struct ContactListSwiftUIApp: App {
                     }
                 Text("Favorites")
                     .tabItem {
-                        Label("Favorites", systemImage: "star.fill")
+                        Label("Numbers", systemImage: "heart.fill")
                     }
             }
         }
