@@ -43,6 +43,7 @@ struct ContactDetailView: View {
                     HStack {
                         Image(systemName: "phone")
                         Text("\(person.phoneNumber)")
+                        
                     }
                     HStack {
                         Image(systemName: "tray")
@@ -50,11 +51,11 @@ struct ContactDetailView: View {
                     }
                     
                     Spacer()
+                    
                 }
-                
+                .navigationTitle("\(person.fullName)")
+                .padding()
             }
-            .navigationTitle("\(person.fullName)")
-            .padding()
         }
     }
 }
