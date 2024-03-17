@@ -42,8 +42,15 @@ struct ContactDetailView: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     //Text("Full Name: \(person.fullName)")
-                    Text("Email: \(person.email)")
-                    Text("Phone: \(person.phoneNumber)")
+                    HStack {
+                        Image(systemName: "phone")
+                        Text("\(person.phoneNumber)")
+                    }
+                    HStack {
+                        Image(systemName: "tray")
+                        Text("\(person.email)")
+                    }
+                   
                     
                     Spacer()
                 }
