@@ -43,25 +43,6 @@ struct ContactDetailView: View {
     }
 }
 
-/*@main
-struct ContactsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            TabView {
-                ContentView()
-                    .tabItem {
-                        Label("Contacts", systemImage: "person.crop.circle")
-                    }
-                Text("Favorites")
-                    .tabItem {
-                        Label("Favorites", systemImage: "star.fill")
-                    }
-            }
-        }
-    }
-}
- */
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

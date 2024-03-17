@@ -16,7 +16,7 @@ struct ContactListSwiftUIApp: App {
                     .tabItem {
                         Label("Contacts", systemImage: "person.crop.circle")
                     }
-                Text("Favorites")
+                Text("Numbers")
                     .tabItem {
                         Label("Numbers", systemImage: "heart.fill")
                     }
